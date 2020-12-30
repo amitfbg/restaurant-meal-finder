@@ -1,0 +1,30 @@
+.postContainer {
+  margin: 1.25rem;
+  width: 24rem;
+  height: 27.5rem;
+  background-color: beige;
+  background-size: cover;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.postContainerDescription {
+  width: 100%;
+  height: 10rem;
+  bottom: 0;
+  right: 0;
+  padding: 1.25rem;
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: red;
+}
+.postContainerDescription p {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: green;
+}
+.postContainerDescription span {
+  font-weight: 900;
+  color: black;
+}

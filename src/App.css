@@ -3,3 +3,25 @@
   box-sizing: border-box;
   padding: 0;
 }
+
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.search-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding: 1rem;
+  max-width: 1230px;
+  min-height: 8rem;
+  border-radius: 0.3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url(./assets/images/searchBackground.jpg);
+  background-size: cover;
+  /* width: 100%; */
+}
