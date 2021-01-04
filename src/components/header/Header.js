@@ -1,9 +1,18 @@
 import React from "react";
+
+//styling done to this header section
 import "./Header.css";
+
+//Importing all the images needed and assigning them some name
 import shareIcon from "../../assets/icons/share.svg";
 import searchIcon from "../../assets/icons/search.svg";
 import bookmarkIcon from "../../assets/icons/bookmark.svg";
 import hamburgerIcon from "../../assets/icons/hamburger.svg";
+
+/* 
+Function: Header
+Description: It defined how header looks
+*/
 
 function Header() {
   return (

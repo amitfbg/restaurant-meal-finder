@@ -1,5 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import "./PostContainer.css";
+
+/*
+ * @function PostContainer
+ * @param  props
+ * @description It sets the background image and shows some description of the image
+ */
 
 function PostContainer(props) {
   return (

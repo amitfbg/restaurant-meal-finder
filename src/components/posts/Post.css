@@ -1,0 +1,24 @@
+.post {
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: brown; */
+  margin: 1.25rem;
+  padding: 1rem;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+}
+.post h1 {
+  margin: 0.2rem 0;
+}
+.post p {
+  color: grey;
+  font-size: 1.2rem;
+}
+.post p span {
+  color: green;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
