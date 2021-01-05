@@ -4,10 +4,10 @@ import React from "react";
 import "./Header.css";
 
 //Importing all the images needed and assigning them some name
-import shareIcon from "../../assets/icons/share.svg";
-import searchIcon from "../../assets/icons/search.svg";
-import bookmarkIcon from "../../assets/icons/bookmark.svg";
-import hamburgerIcon from "../../assets/icons/hamburger.svg";
+import shareIcon from "../../../assets/icons/share.svg";
+import searchIcon from "../../../assets/icons/search.svg";
+import bookmarkIcon from "../../../assets/icons/bookmark.svg";
+import hamburgerIcon from "../../../assets/icons/hamburger.svg";
 
 /* 
 Function: Header

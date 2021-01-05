@@ -4,10 +4,10 @@ const initialState = {
   items: [],
   formValues: {},
   errorMsg: "",
+  isLoading: false,
 };
 
 const reducer = function (state = initialState, action) {
-  // console.log("reducer", action);
   switch (action.type) {
     case actions.FETCH_DATA:
       return {
@@ -23,7 +23,18 @@ const reducer = function (state = initialState, action) {
     case actions.ERROR_MSG:
       return {
         ...state,
+        isLoading: false,
         errorMsg: "OOPS AN ERROR OCCURED.......",
+      };
+    case actions.FORM_SUBMITTED:
+      return {
+        ...state,
+        isLoading: true,
+      };
+    case actions.FETCHING_APPROVED:
+      return {
+        ...state,
+        isLoading: false,
       };
     default:
       return state;

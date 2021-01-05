@@ -3,8 +3,6 @@
   margin-right: auto;
   display: flex;
   max-width: 1272px;
-  /* min-height: 10rem; */
-  /* border-radius: 0.3rem; */
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -14,4 +12,11 @@
   font-weight: 500;
   color: red;
   margin: 1.25rem 0;
+}
+.is-loading {
+  width: 100%;
+  margin: 1.25rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

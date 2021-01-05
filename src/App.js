@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Provider } from "react-redux";
 //Imported all the components
-import Header from "./components/header/Header";
-import PostContainer from "./components/static-post-container/PostContainer";
-import SearchContainer from "./components/search-container/SearchContainer";
-import Posts from "./components/posts/Posts";
-import store from "./components/store/configureStore";
+import Header from "./components/functional/header/Header";
+import PostContainer from "./components/functional/static-post-container/PostContainer";
+import SearchContainer from "./components/class/search-container/SearchContainer";
+import Posts from "./components/functional/posts/Posts";
+import store from "./react-redux-store/store/configureStore";
 //Imported the style which we added to our App.js component
 import "./App.css";
 

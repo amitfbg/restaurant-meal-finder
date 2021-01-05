@@ -2,23 +2,17 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-  /* height: 100vh; */
 }
 
-/* body {
-  height: 100vh;
-} */
 main {
   height: 100vh;
-  /* height: 100%; */
 }
 .header-content {
-  height: 12.5%;
   overflow: hidden;
   z-index: 5;
 }
 .main-content {
-  height: 87.5%;
+  height: 85%;
   overflow: auto;
 }
 
@@ -46,16 +40,4 @@ main {
   flex-wrap: wrap;
   background-image: url(./assets/images/searchBackground.jpg);
   background-size: cover;
-}
-
-@media only screen and (max-width: 600px) {
-  .header-content {
-    height: 15%;
-    overflow: hidden;
-    z-index: 1;
-  }
-  .main-content {
-    height: 85%;
-    overflow: auto;
-  }
 }
