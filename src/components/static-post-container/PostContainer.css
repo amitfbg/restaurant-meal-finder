@@ -1,7 +1,7 @@
 .postContainer {
   margin: 1.25rem;
   width: 24rem;
-  height: 27.5rem;
+  height: 20rem;
   background-color: beige;
   background-size: cover;
   border-radius: 0.5rem;
@@ -17,6 +17,7 @@
   font-size: 1.6rem;
   font-weight: 700;
   color: red;
+  overflow: hidden;
 }
 .postContainerDescription p {
   margin-bottom: 0.3rem;

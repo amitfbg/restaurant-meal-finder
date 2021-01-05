@@ -8,3 +8,10 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+.error-msg {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+  color: red;
+  margin: 1.25rem 0;
+}

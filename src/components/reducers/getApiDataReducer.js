@@ -2,6 +2,8 @@ import * as actions from "../actions/actionType";
 
 const initialState = {
   items: [],
+  formValues: {},
+  errorMsg: "",
 };
 
 const reducer = function (state = initialState, action) {
@@ -11,6 +13,17 @@ const reducer = function (state = initialState, action) {
       return {
         ...state,
         items: action.data,
+        errorMsg: "",
+      };
+    case actions.FORM_INPUT_VALUES:
+      return {
+        ...state,
+        formValues: action.payload,
+      };
+    case actions.ERROR_MSG:
+      return {
+        ...state,
+        errorMsg: "OOPS AN ERROR OCCURED.......",
       };
     default:
       return state;

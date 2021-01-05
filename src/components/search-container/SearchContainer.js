@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./SearchContainer.css";
+import * as actions from "../actions/actionType";
 
 import { connect } from "react-redux";
 import { fetchDatas } from "../actions/getApiDataAction";
@@ -10,6 +11,7 @@ class SearchContainer extends Component {
     this.state = {
       restaurant: "",
       meal: "",
+      isLoading: false,
       isSubmitted: false,
     };
     this.onChange = this.onChange.bind(this);
@@ -21,11 +23,17 @@ class SearchContainer extends Component {
   }
   onSubmit(e) {
     e.preventDefault();
+    this.setState({ isLoading: true });
     let req = {
       restaurant: this.state.restaurant,
       meal: this.state.meal,
+      isLoading: this.state.isLoading,
     };
-    console.log("search", this.props);
+    // console.log("search", this.props);
+    // this.props.dispatch({
+    //   type: actions.FORM_INPUT_VALUES,
+    //   payload: req,
+    // });
     this.props.fetchDatas(req);
     this.setState({ isSubmitted: true });
     e.target.reset();
@@ -63,3 +71,4 @@ class SearchContainer extends Component {
 }
 
 export default connect(null, { fetchDatas })(SearchContainer);
+// export default connect()(SearchContainer);
