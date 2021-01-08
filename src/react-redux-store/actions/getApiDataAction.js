@@ -18,5 +18,21 @@ export function fetchDatas(e) {
           type: actions.ERROR_MSG,
         });
       });
+
+    //mY own api
+    // fetch(`http://localhost:3000/persons`)
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     console.log(data.Persons);
+    //     // dispatch({
+    //     //   type: actions.FETCH_DATA,
+    //     //   data: data.results,
+    //     // });
+    //   })
+    //   .catch((error) => {
+    //     dispatch({
+    //       type: actions.ERROR_MSG,
+    //     });
+    //   });
   };
 }
